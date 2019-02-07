@@ -1,8 +1,9 @@
 #!/bin/bash
 
-mkdir src
+mkdir -p src/module
 mkdir build
-git mv module src
+mv files src/module
+mv .git src/module
 pushd ./src/module
 echo "BUILDING"
 
@@ -17,3 +18,4 @@ if [ $RC -ne 0 ]; then
 else
   echo "BUILD SUCCESS"
 fi
+popd
