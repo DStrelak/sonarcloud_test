@@ -2,8 +2,7 @@
 
 mkdir src
 mkdir build
-mv module src
-cp .git src
+git mv module src
 pushd ./src/module
 echo "BUILDING"
 
