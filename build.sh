@@ -1,6 +1,6 @@
 #!/bin/bash
 mkdir test
-mv .git test
+cp -r .git test
 mv src test
 pushd test
 echo "BUILDING"
