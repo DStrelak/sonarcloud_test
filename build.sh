@@ -3,7 +3,7 @@
 mkdir -p src/module
 mkdir build
 mv files src/module
-mv .git src/module
+cp .git src/module
 pushd ./src/module
 echo "BUILDING"
 
