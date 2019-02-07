@@ -1,4 +1,8 @@
 #!/bin/bash
+mkdir test
+mv .git test
+mv src test
+pushd test
 echo "BUILDING"
 mkdir build
 
