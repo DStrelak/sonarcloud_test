@@ -1,4 +1,5 @@
 #!/bin/bash
+rm -rf .git
 echo "BUILDING"
 mkdir build
 
