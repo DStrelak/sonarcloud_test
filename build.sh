@@ -1,10 +1,14 @@
 #!/bin/bash
-echo "BUILDING"
-mkdir build
 
-g++ -Wall -o build/BiggestUnInt src/BiggestUnInt.cc
-g++ -Wall -o build/HelloWorld src/HelloWorld.cpp
-g++ -Wall -o build/SimpleClass src/SimpleClass.cc
+mkdir src
+mkdir build
+mv module src
+pushd ./src/module
+echo "BUILDING"
+
+g++ -Wall -o ../../build/BiggestUnInt files/BiggestUnInt.cc
+g++ -Wall -o ../../build/HelloWorld files/HelloWorld.cpp
+g++ -Wall -o ../../build/SimpleClass files/SimpleClass.cc
 
 RC=$?
 
