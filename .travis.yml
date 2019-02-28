@@ -1,6 +1,7 @@
 language: c++
 sudo: true
 dist: trusty
+env: CCACHE_COMPILERCHECK=content
 addons:
   sonarcloud:
 # See https://docs.travis-ci.com/user/sonarcloud/
