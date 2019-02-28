@@ -7,7 +7,10 @@ addons:
     organization: "dstrelak-github"
     token:
         secure: $SONAR_TOKEN
-cache: ccache
+cache:
+    ccache: true
+    directories:
+     - $HOME/.ccache
 script: 
  - which gcc
  - which g++
