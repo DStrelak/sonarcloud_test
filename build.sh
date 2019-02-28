@@ -7,10 +7,10 @@ mv .git src/module
 #pushd ./src/module
 echo "BUILDING"
 
-g++ -Wall -o build/BiggestUnInt src/module/files/BiggestUnInt.cc
-g++ -Wall -o build/HelloWorld src/module/files/HelloWorld.cpp
-g++ -Wall -o build/SimpleClass src/module/files/SimpleClass.cc
-g++ -Wall -o build/HelloWorld src/module/files/HelloMundo.cpp
+g++ -Wall src/module/files/BiggestUnInt.cc
+g++ -Wall src/module/files/HelloWorld.cpp
+g++ -Wall src/module/files/SimpleClass.cc
+g++ -Wall src/module/files/HelloMundo.cpp
 
 RC=$?
 
