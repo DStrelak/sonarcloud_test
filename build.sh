@@ -7,10 +7,10 @@ mv .git src/module
 pushd ./src/module
 echo "BUILDING"
 
-ccache g++ -Wall -o ../../build/BiggestUnInt files/BiggestUnInt.cc
-ccache g++ -Wall -o ../../build/HelloWorld files/HelloWorld.cpp
-ccache g++ -Wall -o ../../build/SimpleClass files/SimpleClass.cc
-ccache g++ -Wall -o ../../build/HelloWorld files/HelloMundo.cpp
+g++ -Wall -o ../../build/BiggestUnInt files/BiggestUnInt.cc
+g++ -Wall -o ../../build/HelloWorld files/HelloWorld.cpp
+g++ -Wall -o ../../build/SimpleClass files/SimpleClass.cc
+g++ -Wall -o ../../build/HelloWorld files/HelloMundo.cpp
 
 RC=$?
 
