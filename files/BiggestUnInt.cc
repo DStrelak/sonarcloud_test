@@ -26,7 +26,7 @@ int main(int argc, char* argv[])
     oldi = i ;
     j = i-1 ;
     j += i ;   // this sets    j = 2i-1  (we hope)
-    i *= 4 ;   // this doubles i         (we hope)
+    i *= 2 ;   // this doubles i         (we hope)
     cout << N << ":\t" << oldi << "\t" << j << "\t" << i << "\t";
     bitsout(i);
     cout << endl ;
