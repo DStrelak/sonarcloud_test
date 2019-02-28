@@ -1,6 +1,6 @@
 sudo: true
 dist: trusty
-env: CCACHE_COMPILERCHECK=content CCACHE_LOGFILE=ccache.log
+env: CCACHE_COMPILERCHECK=content CCACHE_LOGFILE=ccache.log PATH=/usr/lib/ccache:$PATH
 addons:
   sonarcloud:
 # See https://docs.travis-ci.com/user/sonarcloud/
