@@ -10,6 +10,8 @@ addons:
         secure: $SONAR_TOKEN
 cache: ccache
 script: 
+ - which gcc
+ - which g++
  - build-wrapper-linux-x86-64 --out-dir bw-outputs/ ./build.sh
  - sonar-scanner
  - ccache -s
