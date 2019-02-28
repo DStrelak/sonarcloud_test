@@ -1,7 +1,7 @@
 language: c++
 sudo: true
 dist: trusty
-env: CCACHE_COMPILERCHECK=content
+env: CCACHE_COMPILERCHECK=content CCACHE_LOGFILE=ccache.log
 addons:
   sonarcloud:
 # See https://docs.travis-ci.com/user/sonarcloud/
@@ -13,3 +13,4 @@ script:
  - build-wrapper-linux-x86-64 --out-dir bw-outputs/ ./build.sh
  - sonar-scanner
  - ccache -s
+ - cat ccache.log
