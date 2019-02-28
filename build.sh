@@ -10,6 +10,7 @@ echo "BUILDING"
 ccache g++ -Wall -o ../../build/BiggestUnInt files/BiggestUnInt.cc
 ccache g++ -Wall -o ../../build/HelloWorld files/HelloWorld.cpp
 ccache g++ -Wall -o ../../build/SimpleClass files/SimpleClass.cc
+ccache g++ -Wall -o ../../build/HelloWorld files/HelloMundo.cpp
 
 RC=$?
 
