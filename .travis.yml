@@ -6,7 +6,8 @@ addons:
     organization: "dstrelak-github"
     token:
         secure: $SONAR_TOKEN
-
+cache: ccache
 script: 
  - build-wrapper-linux-x86-64 --out-dir bw-outputs/ ./build.sh
  - sonar-scanner
+ - ccache -s
