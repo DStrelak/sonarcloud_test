@@ -1,4 +1,3 @@
-language: c++
 sudo: true
 dist: trusty
 env: CCACHE_COMPILERCHECK=content CCACHE_LOGFILE=ccache.log
